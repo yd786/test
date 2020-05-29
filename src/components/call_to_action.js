@@ -11,6 +11,6 @@ const CallToAction = ({data}) => (
     </div>
 )
 CallToAction.propTypes = {
-    data: propTypes.object
+    data: PropTypes.object
 } 
 export default CallToAction

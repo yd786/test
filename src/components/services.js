@@ -7,11 +7,9 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 const Service = ({data}) => {
 	return (<>
     <div className="flex flex-wrap">
-		{
-			data.images.map(img => (
-				<div className="w-full md:w-1/3"><Img fluid={img.image.childImageSharp.fluid} /></div>
-			))
-		}
+		<div className="w-full md:w-1/3"><Img fluid={image1.childImageSharp.fluid} /></div>
+		<div className="w-full md:w-1/3"><Img fluid={image2.childImageSharp.fluid} /></div>
+		<div className="w-full md:w-1/3"><Img fluid={image3.childImageSharp.fluid} /></div>
 	</div>
 	<div id="Services" className="bg-customBlue text-white">
 		<div className="text-center pt-10 md:pb-5">

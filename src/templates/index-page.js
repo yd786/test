@@ -107,12 +107,24 @@ query IndexPageTemplate {
         description
       },
       services{
-        images{
-          image{
-                childImageSharp{
-              fluid(maxWidth:1000){
-                ...GatsbyImageSharpFluid_withWebp
-              }
+        image1{
+          childImageSharp{
+        fluid(maxWidth:1000){
+          ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        },
+        image2{
+              childImageSharp{
+            fluid(maxWidth:1000){
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        },
+        image3{
+              childImageSharp{
+            fluid(maxWidth:1000){
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

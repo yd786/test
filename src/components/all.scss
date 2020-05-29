@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+$gray-xd: #464646;
+$blue-xd: #1670a2;
+$white-xd: #efefef;
+
+h1 {
+  @apply text-6xl;
+}
+
+body {
+  background-color: $white-xd;
+}
+
+.section {
+  &.hero {
+    text-align: center;
+  }
+}
+
+.footer {
+  background-color: $gray-xd;
+}

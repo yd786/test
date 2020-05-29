@@ -127,7 +127,7 @@ query IndexPageTemplate {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
-        }
+        },
         service{
           image{
                 childImageSharp{

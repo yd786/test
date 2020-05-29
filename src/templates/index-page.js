@@ -137,7 +137,23 @@ query IndexPageTemplate {
           }
         }
         logos{
-          image{
+          image1{
+            id,
+            childImageSharp{
+              fluid(maxWidth:1000){
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          },
+          image2{
+            id,
+            childImageSharp{
+              fluid(maxWidth:1000){
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          },
+          image3{
             id,
             childImageSharp{
               fluid(maxWidth:1000){

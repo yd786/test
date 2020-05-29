@@ -9,10 +9,9 @@ calltoaction:
   description: >
     Quality work from Whistler, BC. At Paradise Machine we look for simple solutions for your complex problems. We look to minimize costs and streamline your designs through mechanical design and 3D modeling.
 services:
-  images:
-    - image1: /img/serviceHeader1.png
-    - image2: /img/serviceHeader2.png
-    - image3: /img/serviceHeader3.png
+  - image1: /img/serviceHeader1.png
+  - image2: /img/serviceHeader2.png
+  - image3: /img/serviceHeader3.png
   service:
     - image: /img/s1.png
       title: CNC Swiss

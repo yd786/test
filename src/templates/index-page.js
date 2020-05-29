@@ -7,6 +7,7 @@ import Work from "../components/work"
 import About from "../components/about"
 import Footer from "../components/landing_footer"
 import Layout from "../components/CustomLayout"
+import CallToAction from "../components/call_to_action"
 
 export const IndexPageTemplate = ({
   bgimage,
@@ -21,7 +22,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <Hero title={siteName} heading={heading} subheading={subheading} image={bgimage}/>
-    <Call_to_action data={calltoaction}/>
+    <CallToAction data={calltoaction}/>
     <Service data={services}/>
     <Work data={work}/>
     <About data={about}/>

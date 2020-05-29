@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Hero from "../components/hero"
-import Call_to_action from "../components/call_to_action"
 import Service from "../components/services"
 import Work from "../components/work"
 import About from "../components/about"
@@ -40,7 +39,9 @@ IndexPageTemplate.propTypes = {
     description:PropTypes.string
   }),
   services: PropTypes.shape({
-    images: PropTypes.array,
+    image1: PropTypes.object,
+    image2: PropTypes.object,
+    image3: PropTypes.object,
     service:PropTypes.array
   }),
   work: PropTypes.shape({
@@ -107,15 +108,15 @@ query IndexPageTemplate {
         description
       },
       services{
-        image1{
-          childImageSharp{
+				image1{
+              childImageSharp{
             fluid(maxWidth:1000){
-            ...GatsbyImageSharpFluid_withWebp
-              }
+              ...GatsbyImageSharpFluid_withWebp
             }
+          }
         },
         image2{
-          childImageSharp{
+              childImageSharp{
             fluid(maxWidth:1000){
               ...GatsbyImageSharpFluid_withWebp
             }
@@ -127,12 +128,13 @@ query IndexPageTemplate {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
-        },
+        }
+        
         service{
           image{
-            childImageSharp{
+                childImageSharp{
               fluid(maxWidth:1000){
-                ...GatsbyImageSharpFluid_withWebp
+								...GatsbyImageSharpFluid_withWebp
               }
             }
           },
@@ -144,32 +146,16 @@ query IndexPageTemplate {
         headerImage{
           childImageSharp{
             fluid(maxWidth:1000){
-              ...GatsbyImageSharpFluid_withWebp
+								...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         logos{
-          image1{
+          image{
             id,
             childImageSharp{
               fluid(maxWidth:1000){
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          },
-          image2{
-            id,
-            childImageSharp{
-              fluid(maxWidth:1000){
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          },
-          image3{
-            id,
-            childImageSharp{
-              fluid(maxWidth:1000){
-                ...GatsbyImageSharpFluid_withWebp
+								...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -179,7 +165,7 @@ query IndexPageTemplate {
         sideImage{
           childImageSharp{
             fluid(maxWidth:500){
-              ...GatsbyImageSharpFluid_withWebp
+								...GatsbyImageSharpFluid_withWebp
             }
           }
         },

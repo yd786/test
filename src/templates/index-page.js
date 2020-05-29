@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Hero from "../components/Hero"
+import Hero from "../components/hero"
 import Call_to_action from "../components/call_to_action"
 import Service from "../components/services"
 import Work from "../components/work"

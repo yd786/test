@@ -109,13 +109,13 @@ query IndexPageTemplate {
       services{
         image1{
           childImageSharp{
-        fluid(maxWidth:1000){
-          ...GatsbyImageSharpFluid_withWebp
+            fluid(maxWidth:1000){
+            ...GatsbyImageSharpFluid_withWebp
+              }
             }
-          }
         },
         image2{
-              childImageSharp{
+          childImageSharp{
             fluid(maxWidth:1000){
               ...GatsbyImageSharpFluid_withWebp
             }
@@ -130,7 +130,7 @@ query IndexPageTemplate {
         },
         service{
           image{
-                childImageSharp{
+            childImageSharp{
               fluid(maxWidth:1000){
                 ...GatsbyImageSharpFluid_withWebp
               }

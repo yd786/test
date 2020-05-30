@@ -169,7 +169,8 @@ query IndexPageTemplate {
             }
           }
         },
-        description
+        description,
+        title
       }
       footer{
         address,

@@ -1,27 +1,29 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
 
+button {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+}
+p{
+  font-family: 'Open sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 2;
+}
+h1{
+  font-family: 'Kelson Bold','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+  font-family: 'Kelson Regular','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kel{
+  font-family: 'Kelson Regular','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 @import "tailwindcss/utilities";
-
-$gray-xd: #464646;
-$blue-xd: #1670a2;
-$white-xd: #efefef;
-
-h1 {
-  @apply text-6xl;
-}
-
-body {
-  background-color: $white-xd;
-}
-
-.section {
-  &.hero {
-    text-align: center;
-  }
-}
-
-.footer {
-  background-color: $gray-xd;
-}

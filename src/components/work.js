@@ -7,14 +7,14 @@ const Work = ({data}) => {
     <div className="w-full">
       {data.headerImage.childImageSharp ? <Img fluid={data.headerImage.childImageSharp.fluid} /> : <img src={data.headerImage} alt=''/>}
     </div>
-    <div id="Work" className="md:p-10 pt-10 text-center bg-customBlack text-white">
-        <div className="text-4xl font-bold ">WORK</div>
-        <div className="flex flex-wrap justify-center items-center mt-5 md:mt-0">
+    <div id="Work" className="py-16 px-12 text-center bg-customBlack text-white">
+        <h1 className="text-4xl font-bold ">WORK</h1>
+        <div className="flex flex-wrap justify-around items-center mt-10 md:mt-5 md:mt-0">
         {
           data.logos.map(logo => (
             data.headerImage.childImageSharp ?
-              <Img style={{width:"180px"}} key={logo.id} className="md:ml-4" fluid={logo.image.childImageSharp.fluid} /> : 
-              <img style={{width:"180px"}} key={logo.id} className="md:ml-4" fluid={logo.image} />
+              <Img style={{width:"180px"}} key={logo.image.id} className="md:ml-4" fluid={logo.image.childImageSharp.fluid} /> : 
+              <img style={{width:"180px"}} key={logo.image.id} className="md:ml-4" fluid={logo.image} />
           ))
         }
         </div>

@@ -29,10 +29,12 @@ services:
         made with quick and crucial accuracy.
     - image: /img/s3.png
       title: CNC Milling
-      description: We utilize 4 axis vertical-and horizontal mills to manufacture
-        build-to-print prototypes and production. We choose to use modular tool
-        fixtures to decrease tool up costs and allows us the adjustable in
-        scheduling for quick turnarounds.
+      description: >
+        We utilize 4 axis vertical-and horizontal mills to manufacture build-to-print prototypes and production. We choose to use modular tool fixtures to decrease tool up costs and allows us the adjustable in scheduling for quick turnarounds.
+    - image: /img/s4.png
+      title: Production
+      description: >
+        Production Manufacturing is our backbone. Whether you have a need for high mix with low volume or just high volume, we can manage either.
 work:
   headerImage: /img/workHeader.png
   logos:

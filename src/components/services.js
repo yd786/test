@@ -22,12 +22,12 @@ const Service = ({data}) => (
 			</div>
 		)
 	}
-	<div id="Services" className="bg-customBlue text-white">
-		<div className="text-center pt-10 md:pb-5">
-			<div className="text-4xl font-bold">WHAT WE DO</div>
+	<div id="Services" className="bg-customBlue text-white py-16 px-6">
+		<div className="text-center pb-10 md:pb-5">
+			<h1 className="text-4xl font-bold">WHAT WE DO</h1>
 		</div>
-		<div className=" pb-10 ">
-			<div className="flex flex-col md:flex-row justify-center flex-wrap">
+		<div>
+			<div className="flex mt-6 mb-16 flex-col md:flex-row justify-center flex-wrap">
 				{
 					data.service.map(s => (
 						<IndividualService key={s.title} icon={s.image} title={s.title} description={s.description}/>
@@ -35,7 +35,7 @@ const Service = ({data}) => (
 				}
 			</div>
 			<div className="text-center mb-4 mt-10 ">
-				<button onClick={() => scrollTo(`#Contact`)} className="bg-gray-100 border-2 border-bgCustomBlue inline-block text-center text-customBlue text-xl font-bold tracking-wide px-24 py-4 rounded uppercase transition duration-300 hover:bg-customBlue hover:border-white hover:text-white">Get started</button>
+				<button onClick={() => scrollTo(`#Contact`)} className="kel bg-gray-100 border-2 border-bgCustomBlue inline-block text-center text-customBlue text-xl font-bold tracking-wide px-24 py-4 rounded uppercase transition duration-300 hover:bg-customBlue hover:border-white hover:text-white">Get started</button>
 			</div>
 		</div>
 	</div>

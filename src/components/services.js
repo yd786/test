@@ -1,16 +1,27 @@
 import React from "react";
 import IndividualService from "../components/IndividualService"
-import propTypes from "prop-types"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-const Service = ({data}) => {
-	return (<>
-    <div className="flex flex-wrap">
-		<div className="w-full md:w-1/3"><Img fluid={data.image1.childImageSharp.fluid} /></div>
-		<div className="w-full md:w-1/3"><Img fluid={data.image2.childImageSharp.fluid} /></div>
-		<div className="w-full md:w-1/3"><Img fluid={data.image3.childImageSharp.fluid} /></div>
-	</div>
+const Service = ({data}) => (
+<>
+	{
+		data.image1.childImageSharp ? (
+			<div className="flex flex-wrap">
+			<div className="w-full md:w-1/3"><Img fluid={data.image1.childImageSharp.fluid} /></div>
+			<div className="w-full md:w-1/3"><Img fluid={data.image2.childImageSharp.fluid} /></div>
+			<div className="w-full md:w-1/3"><Img fluid={data.image3.childImageSharp.fluid} /></div>
+			</div>
+		) :
+		(
+			<div className="flex flex-wrap">
+			<div className="w-full md:w-1/3 text-center"><img className="inline-block" src={data.image1} alt='' /></div>
+			<div className="w-full md:w-1/3 text-center"><img className="inline-block" src={data.image2} alt='' /></div>
+			<div className="w-full md:w-1/3 text-center"><img className="inline-block" src={data.image3} alt='' /></div>
+			</div>
+		)
+	}
 	<div id="Services" className="bg-customBlue text-white">
 		<div className="text-center pt-10 md:pb-5">
 			<div className="text-4xl font-bold">WHAT WE DO</div>
@@ -19,7 +30,7 @@ const Service = ({data}) => {
 			<div className="flex flex-col md:flex-row justify-center flex-wrap">
 				{
 					data.service.map(s => (
-						<IndividualService icon={s.image} title={s.title} description={s.description}/>
+						<IndividualService key={s.title} icon={s.image} title={s.title} description={s.description}/>
 					))
 				}
 			</div>
@@ -28,9 +39,11 @@ const Service = ({data}) => {
 			</div>
 		</div>
 	</div>
-</>)}
+</>
+)
+
 Service.propTypes = {
-	data : propTypes.object
+	data : PropTypes.object
 }
 
 export default Service

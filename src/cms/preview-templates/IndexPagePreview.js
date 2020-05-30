@@ -20,9 +20,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
           description:entry.getIn(['data', 'calltoaction','description']),
         }}
         services={{
-          image1:getAsset(entry.getIn(['data', 'bgimage'])),
-          image2:getAsset(entry.getIn(['data', 'bgimage'])),
-          image3:getAsset(entry.getIn(['data', 'bgimage'])),
+          image1:getAsset(entry.getIn(['data','services','image1'])),
+          image2:getAsset(entry.getIn(['data','services','image2'])),
+          image3:getAsset(entry.getIn(['data','services','image3'])),
           service:Services
         }}
         work={{

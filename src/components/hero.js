@@ -5,7 +5,8 @@ import Img from "gatsby-image"
 const Hero = ({title,heading,subheading,image}) => {
     return (
     <div className="relative h-screen" style={{ height:"calc(var(--vh, 1vh) * 100)"}}>
-        <Img fluid={image.childImageSharp.fluid} className="h-full w-full top-0 left-0 bg-gray-900 z-0 " />
+        {image.childImageSharp ? <Img fluid={image.childImageSharp.fluid} className="h-full w-full top-0 left-0 bg-gray-900 z-0 " /> : 
+        <img src={image} alt='' className="h-full w-full top-0 left-0 bg-gray-900 z-0 " />}
         <div style={{backgroundColor:"#717171"}} className="overlay h-full w-full absolute opacity-50 top-0 left-0 z-0 h-full w-full"></div>
         <div className="absolute top-0 left-0 h-full w-full md:px-20 p-5 md:py-10 text-white ">
             <Header title={title}/>

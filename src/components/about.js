@@ -8,7 +8,9 @@ const About = ({data}) => {
     return (
         <div id="About" className="flex flex-col md:flex-row p-5 lg:p-10">
             <div className="md:w-5/12 bg-gray-100">
-                <Img fluid={data.sideImage.childImageSharp.fluid} />
+                {
+                    data.sideImage.childImageSharp ? <Img fluid={data.sideImage.childImageSharp.fluid} /> : <img src={data.sideImage} alt=''/>
+                }
             </div>
             <div className="md:w-5/12 md:ml-8 mt-4 md:mt-0">
                 <div className="text-4xl font-bold">{data.title}</div>

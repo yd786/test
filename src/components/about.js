@@ -17,7 +17,7 @@ const About = ({data}) => {
                 <div className="mt-4 whitespace-pre-line">
                     <p>{data.description}</p>
                 </div>
-                <button onClick={() => scrollTo(`#Services`)} className="kel mt-10 md:mt-16 bg-customBlue block mx-auto md:inline-block text-center text-white text-xl font-bold tracking-wide px-24 py-4 rounded transition duration-300 hover:bg-opacity-75">SERVICES</button>
+                <button aria-label="button" onClick={() => scrollTo(`#Services`)} className="kel mt-10 md:mt-16 bg-customBlue block mx-auto md:inline-block text-center text-white text-xl font-bold tracking-wide px-24 py-4 rounded transition duration-300 hover:bg-opacity-75">SERVICES</button>
             </div>
         </div>
     )

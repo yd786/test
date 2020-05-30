@@ -7,7 +7,7 @@ const CallToAction = ({data}) => (
         <div className="md:mt-3 mt-8 md:w-7/12 mx-auto">
             <p>{data.description}</p>
         </div>
-        <button className="md:mt-16 mt-10 bg-customBlue inline-block text-white text-xl font-bold tracking-wide px-24 py-4 rounded-lg transition duration-300 hover:bg-opacity-75 kel" onClick={() => scrollTo(`#Services`)} >SERVICES</button>
+        <button aria-label="button" className="md:mt-16 mt-10 bg-customBlue inline-block text-white text-xl font-bold tracking-wide px-24 py-4 rounded-lg transition duration-300 hover:bg-opacity-75 kel" onClick={() => scrollTo(`#Services`)} >SERVICES</button>
     </div>
 )
 CallToAction.propTypes = {

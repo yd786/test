@@ -35,7 +35,7 @@ const Service = ({data}) => (
 				}
 			</div>
 			<div className="text-center mb-4 mt-10 ">
-				<button onClick={() => scrollTo(`#Contact`)} className="kel bg-gray-100 border-2 border-bgCustomBlue inline-block text-center text-customBlue text-xl font-bold tracking-wide px-24 py-4 rounded uppercase transition duration-300 hover:bg-customBlue hover:border-white hover:text-white">Get started</button>
+				<button aria-label="button" onClick={() => scrollTo(`#Contact`)} className="kel bg-gray-100 border-2 border-bgCustomBlue inline-block text-center text-customBlue text-xl font-bold tracking-wide px-24 py-4 rounded uppercase transition duration-300 hover:bg-customBlue hover:border-white hover:text-white">Get started</button>
 			</div>
 		</div>
 	</div>

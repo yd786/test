@@ -16,7 +16,7 @@ const Hero = ({title,heading,subheading,image}) => {
                 <h2 className="text-xl uppercase">{subheading}C</h2>
             </div>
             <div className="z-20 absolute bottom-0 left-0 w-full text-center mb-8">
-                <button onClick={() => scrollTo(`#CallToAction`)} className='cursor-pointer inline-block p-2 rounded-lg bg-black bg-opacity-0 hover:bg-opacity-50'>
+                <button aria-label="button" onClick={() => scrollTo(`#CallToAction`)} className='cursor-pointer inline-block p-2 rounded-lg bg-black bg-opacity-0 hover:bg-opacity-50'>
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 inline-block" viewBox="0 0 50 50">
                         <path fill="none" stroke="#FFFEFE" strokeLinecap="round" strokeWidth="4" d="M45 9L25 29 5 9"/>
                         <path fill="none" stroke="#FFFEFE" strokeLinecap="round" strokeWidth="4" d="M45 22L25 42 5 22"/>

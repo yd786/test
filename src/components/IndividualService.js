@@ -9,7 +9,7 @@ const IndividualService = ({icon,title, description}) => {
     <div className="md:w-6/12 lg:w-5/12 text-center flex lg:text-left flex-col lg:flex-row p-10 md:p-10 justify-center md:justify-start">
         <div className="mx-auto" style={style} >
             {
-                icon && icon.childImageSharp || icon ? <Img fluid={icon.childImageSharp.fluid} style={style}/> : <img src={icon} alt='' style={style}/>
+                icon && icon.childImageSharp ? <Img fluid={icon.childImageSharp.fluid} style={style}/> : <img src={icon} alt='' style={style}/>
             }
         </div>
         <div className="lg:ml-6 mt-5 lg:mt-0">

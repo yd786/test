@@ -12,7 +12,7 @@ const Work = ({data}) => {
         <div className="flex flex-wrap justify-around items-center mt-10 md:mt-5 md:mt-0">
         {
           data.logos.map(logo => (
-            logo && logo.childImageSharp  ?
+            logo && logo.image.childImageSharp  ?
               <Img style={{width:"180px"}} key={logo.image.id} className="md:ml-4" fluid={logo.image.childImageSharp.fluid} /> : 
               <img style={{width:"180px"}} key={logo.image} className="md:ml-4" src={logo.image} />
           ))

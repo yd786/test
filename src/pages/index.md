@@ -33,6 +33,9 @@ services:
         build-to-print prototypes and production. We choose to use modular tool
         fixtures to decrease tool up costs and allows us the adjustable in
         scheduling for quick turnarounds.
+    - asdasd
+    - asd
+    - asd
 work:
   headerImage: /img/workHeader.png
   logos:

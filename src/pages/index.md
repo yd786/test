@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 siteName: Paradise Machine
-bgimage: /img/blog-index.jpg
+bgimage: /img/flavor_wheel.jpg
 heading: Quality machining
 subheading: From Whistler, BC
 calltoaction:
@@ -28,7 +28,7 @@ services:
         is. While also making sure initial designs or proofs of concepts get
         made with quick and crucial accuracy.
     - image: /img/s3.png
-      title: CNC Milling
+      title: CNC Milling test
       description: We utilize 4 axis vertical-and horizontal mills to manufacture
         build-to-print prototypes and production. We choose to use modular tool
         fixtures to decrease tool up costs and allows us the adjustable in
@@ -42,7 +42,7 @@ work:
     - image: /img/l4.png
 about:
   sideImage: /img/serviceHeader2.png
-  title: OUR STORY
+  title: "OUR STORY not "
   description: >
     Quality work from Whistler, BC. At Paradise Machine we look for simple
     solutions for your complex problems. We look to minimize costs and

@@ -28,7 +28,7 @@ services:
         is. While also making sure initial designs or proofs of concepts get
         made with quick and crucial accuracy.
     - image: /img/s3.png
-      title: CNC Milling
+      title: CNC Milling test
       description: We utilize 4 axis vertical-and horizontal mills to manufacture
         build-to-print prototypes and production. We choose to use modular tool
         fixtures to decrease tool up costs and allows us the adjustable in

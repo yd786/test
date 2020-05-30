@@ -42,7 +42,7 @@ work:
     - image: /img/l4.png
 about:
   sideImage: /img/serviceHeader2.png
-  title: OUR STORY
+  title: "OUR STORY not "
   description: >
     Quality work from Whistler, BC. At Paradise Machine we look for simple
     solutions for your complex problems. We look to minimize costs and

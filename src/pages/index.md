@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-siteName: Paradise Machine testing
-bgimage: /img/flavor_wheel.jpg
+siteName: Paradise Machine
+bgimage: /img/hero-bg.png
 heading: Quality machining
 subheading: From Whistler, BC
 calltoaction:

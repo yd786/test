@@ -28,7 +28,7 @@ services:
         is. While also making sure initial designs or proofs of concepts get
         made with quick and crucial accuracy.
     - image: /img/s3.png
-      title: CNC Milling test
+      title: CNC Milling
       description: We utilize 4 axis vertical-and horizontal mills to manufacture
         build-to-print prototypes and production. We choose to use modular tool
         fixtures to decrease tool up costs and allows us the adjustable in
@@ -42,7 +42,7 @@ work:
     - image: /img/l4.png
 about:
   sideImage: /img/serviceHeader2.png
-  title: "OUR STORY not "
+  title: OUR STORY
   description: >
     Quality work from Whistler, BC. At Paradise Machine we look for simple
     solutions for your complex problems. We look to minimize costs and

@@ -9,9 +9,9 @@ const Service = ({data}) => (
 	{
 		data.image1.childImageSharp ? (
 			<div className="flex flex-wrap">
-			<div className="w-full md:w-1/3"><Img fluid={data.image1.childImageSharp.fluid} /></div>
-			<div className="w-full md:w-1/3"><Img fluid={data.image2.childImageSharp.fluid} /></div>
-			<div className="w-full md:w-1/3"><Img fluid={data.image3.childImageSharp.fluid} /></div>
+			<div className="w-full md:w-1/3"><Img className="h-full" fluid={data.image1.childImageSharp.fluid} /></div>
+			<div className="w-full md:w-1/3"><Img className="h-full" fluid={data.image2.childImageSharp.fluid} /></div>
+			<div className="w-full md:w-1/3"><Img className="h-full" fluid={data.image3.childImageSharp.fluid} /></div>
 			</div>
 		) :
 		(

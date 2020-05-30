@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-siteName: Paradise Machine tesing
+siteName: Paradise Machine
 bgimage: /img/flavor_wheel.jpg
 heading: Quality machining
 subheading: From Whistler, BC
@@ -44,7 +44,7 @@ work:
     - image: /img/l4.png
 about:
   sideImage: /img/serviceHeader2.png
-  title: OUR STORY
+  title: "OUR STORY not "
   description: >
     Quality work from Whistler, BC. At Paradise Machine we look for simple
     solutions for your complex problems. We look to minimize costs and

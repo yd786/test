@@ -31,7 +31,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         }}
         about={{
           sideImage:getAsset(entry.getIn(['data', 'about', 'sideImage'])),
-          description:entry.getIn(['data','about','description'])
+          description:entry.getIn(['data','about','description']),
+          title:entry.getIn(['data','about','description'])
         }}
         footer={{
           address:entry.getIn(['data', 'footer','address']),
